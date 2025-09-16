@@ -417,21 +417,26 @@ header nav a.active, header nav a:hover{
 
 
 
-/* Ajuste general del slider */
+/* --- ARREGLO SLIDER RESPONSIVE --- */
 .slider {
-  position: relative;
   width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
   overflow: hidden;
+  position: relative;
 }
 
+/* La lista de slides ocupa todo el ancho */
 .slider .list {
   display: flex;
-  flex-direction: row;
+  flex-wrap: nowrap;
   width: 100%;
+  height: auto;
 }
 
+/* Cada item debe llenar la pantalla */
 .slider .list .item {
-  min-width: 100%;
+  flex: 0 0 100%;
   position: relative;
 }
 
@@ -445,69 +450,70 @@ header nav a.active, header nav a:hover{
 /* Contenido sobre la imagen */
 .slider .list .item .content {
   position: absolute;
-  bottom: 10%;
+  bottom: 12%;
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
   text-align: center;
   color: #fff;
-  text-shadow: 0 3px 6px rgba(0,0,0,0.6);
+  text-shadow: 0px 3px 6px rgba(0,0,0,0.7);
 }
 
 /* Botón */
 .slider .list .item .content .button button {
   padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 25px;
   border: none;
   background: #b30000;
   color: #fff;
-  border-radius: 20px;
-  cursor: pointer;
 }
 
-/* Thumbnails abajo bien centrados */
+/* Miniaturas abajo centradas */
 .thumbnail {
   display: flex;
   justify-content: center;
-  gap: 8px;
-  margin-top: 10px;
   flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
 }
 
 .thumbnail .item img {
   width: 60px;
   height: auto;
-  border-radius: 6px;
+  border-radius: 5px;
 }
 
 /* Flechas */
 .nextPrevArrows {
   position: absolute;
   bottom: 15px;
-  width: 100%;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
-  padding: 0 15px;
+  padding: 0 20px;
 }
 
 .nextPrevArrows button {
-  background: rgba(0,0,0,0.5);
-  border: none;
-  color: #fff;
-  font-size: 20px;
-  border-radius: 50%;
   width: 40px;
   height: 40px;
+  font-size: 18px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
 }
 
-/* Responsive */
+/* Ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
   .slider .list .item .content .title {
-    font-size: 20px;
+    font-size: 18px;
   }
   .slider .list .item .content .type {
-    font-size: 16px;
+    font-size: 14px;
   }
   .slider .list .item .content .description {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
