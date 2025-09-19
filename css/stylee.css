@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(180deg, #0c3b18 0%, #1c1c1c 100%);
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+
+/* Logo de Xbox */
+
+
+.logo > img {
+    width: 100px;
+    padding: 15px;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(180deg, #15943b 0%, #1c1c1c 100%);
+    padding: 20px;
+    text-align: center;
+    color: #0f0f0f;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #107C10;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Navegación */
+nav {
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px 0;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #00ff99;
+}
+
+.productos {
+  max-width: 1500px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+} 
+
+.productos h1 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #f70000;
+}
+
+.contenedor-productos {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #000000;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 15px;
+  height: 350px; 
+  text-align: center;
+  cursor: pointer;
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 120px;
+  object-fit: contain;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+  color: #fdfdfd;
+}
+
+.card p {
+  font-size: 14px;
+  color: #ffffff;
+  flex-grow: 1; 
+  margin: 5px 0;
+}
+
+.precio {
+  font-size: 16px;
+  font-weight: bold;
+  color: #0077cc;
+  margin: 10px 0;
+}
+
+.btn-ver {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #0077cc;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-ver:hover {
+  background: #005fa3;
+}
+
+@media (max-width: 1024px) {
+  .contenedor-productos {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+}
+
+@media (max-width: 768px) {
+  .contenedor-productos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .contenedor-productos {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card:hover {
+  transform: scale(1.05);
+} 
+
+footer {
+    background-color: #1c1c1c;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+    border-top: 2px solid #107C10;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.social-icons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.icon {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.icon.facebook { background-color: #3b5998; }
+.icon.twitter { background-color: #1da1f2; }
+.icon.instagram { background-color: #e1306c; }
+.icon.youtube { background-color: #ff0000; }
+
+.icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #ffffff44;
+    color: #fff;
+} 

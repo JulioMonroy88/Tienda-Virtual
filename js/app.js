@@ -44,14 +44,31 @@ function moveSlider(direction) {
 document.querySelectorAll('.slider .list .item .content .button button')
   .forEach(boton => {
     boton.addEventListener('click', function() {
-      const content = this.closest('.content');
-      content.classList.toggle('show');
+      const content = this.closest('.content')
+      content.classList.toggle('show')
 
       // Cambiar texto del botón
       if (content.classList.contains('show')) {
-        this.textContent = "Ver menos";
+        this.textContent = "Ver menos"
       } else {
-        this.textContent = "Ver más";
+        this.textContent = "Ver más"
       }
-    });
-  });
+    })
+  })
+
+
+
+  let lastScrollTop = 0;
+  const navbar = document.querySelector("header");
+
+  window.addEventListener("scroll", function () {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > lastScrollTop) {
+      // Scroll hacia abajo
+      navbar.style.top = "-70px"; // Oculta el header
+    } else {
+      // Scroll hacia arriba
+      navbar.style.top = "0"; // Muestra el header
+    }
+    lastScrollTop = scrollTop
+  })
