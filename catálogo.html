@@ -8,101 +8,303 @@
 </head>
 <body>
     
-    <header>
-            <div class="logo">
-        <img src="img/logo para el proyecto.svg" alt="logotipo de la pagina">
-    </div>
-        <h1>TECH BYTE</h1>
-        <p>Mantente al día con las últimas novedades del mundo de los videojuegos.</p>
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            <img src="logotipo/logo.svg" alt="">
+        </a> 
+        <nav>
+            <a href="#" class="active">Inicio</a>
+            <a href="catálogo.html"> Catálogo</a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="contacto.html">Contactenos</a>
+        </nav>
     </header>
 
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="accesorios">Catalogo</a>
-        <a href="Game Pass 2.html">Ofertas</a>
-        <a href="Noticias 5.html">Contactenos</a>
-        <a href="contacto 4.html">Ubicación</a>
-    </nav>
+    <section class="productos">
+  <h1>Productos Informáticos</h1>
+  <div class="contenedor-productos">
 
-      <section class="productos">
-     <h1>Productos Informáticos</h1>
-    <div class="contenedor-productos">
-    <div class="card">
-        <img src="img/dell.png" alt="Laptop">
-        <h3>Laptop Dell XPS</h3>
-        <p>Potente y ligera, ideal para estudiantes y profesionales.</p>
-        <span class="precio">$1200.00</span>
-        <button class="btn-ver">Ver más</button>
+    <!-- CARD 1 -->
+    <div class="card" 
+         data-titulo="Laptop Dell XPS" 
+         data-detalles="Laptop ultradelgada con procesador Intel Core i7, pantalla táctil 4K, 16GB RAM y 512GB SSD. Ideal para productividad y diseño gráfico." 
+         data-precio="$1200.00" 
+         data-img="img/dell.png">
+      <img src="img/dell.png" alt="Laptop Dell XPS">
+      <h3>Laptop Dell XPS</h3>
+      <p>Potente y ligera, ideal para estudiantes y profesionales.</p>
+      <span class="precio">$1200.00</span>
+      <button class="btn-ver">Ver más</button>
     </div>
-    <div class="card">
-        <img src="img/teclado2.png" alt="Teclado Mecánico">
-        <h3>Teclado Mecánico RGB</h3>
-        <p>Retroiluminado con switches azules para mejor experiencia.</p>
-        <span class="precio">$85.00</span>
-        <button class="btn-ver">Ver más</button>
+
+    <!-- CARD 2 -->
+    <div class="card" 
+         data-titulo="Teclado Mecánico RGB" 
+         data-detalles="Teclado con retroiluminación RGB personalizable, switches mecánicos tipo azul, estructura metálica y reposamuñecas desmontable." 
+         data-precio="$85.00" 
+         data-img="img/teclado2.png">
+      <img src="img/teclado2.png" alt="Teclado Mecánico RGB">
+      <h3>Teclado Mecánico RGB</h3>
+      <p>Retroiluminado con switches azules para mejor experiencia.</p>
+      <span class="precio">$85.00</span>
+      <button class="btn-ver">Ver más</button>
     </div>
-    <div class="card">
-        <img src="img/mouse2.png" alt="Mouse Gamer">
-        <h3>Mouse Gamer Logitech</h3>
-        <p>Alta precisión con sensor óptico y diseño ergonómico.</p>
-        <span class="precio">$49.99</span>
-        <button class="btn-ver">Ver más</button>
+
+    <!-- CARD 3 -->
+    <div class="card" 
+         data-titulo="Mouse Gamer Logitech" 
+         data-detalles="Sensor HERO de alta precisión, 6 botones programables, DPI ajustable hasta 16000, diseño ergonómico para largas sesiones de juego." 
+         data-precio="$49.99" 
+         data-img="img/mouse2.png">
+      <img src="img/mouse2.png" alt="Mouse Gamer Logitech">
+      <h3>Mouse Gamer Logitech</h3>
+      <p>Alta precisión con sensor óptico y diseño ergonómico.</p>
+      <span class="precio">$49.99</span>
+      <button class="btn-ver">Ver más</button>
     </div>
-    <div class="card">
-        <img src="img/curvo.png" alt="Monitor">
-        <h3>Monitor 27” Curvo</h3>
-        <p>Pantalla Full HD curva para máxima inmersión.</p>
-        <span class="precio">$310.00</span>
-        <button class="btn-ver">Ver más</button>
+
+    <!-- CARD 4 -->
+    <div class="card" 
+         data-titulo="Monitor 27” Curvo" 
+         data-detalles="Pantalla curva Full HD de 27 pulgadas, tasa de refresco de 144Hz, tecnología FreeSync, ideal para gaming y trabajo multimedia." 
+         data-precio="$310.00" 
+         data-img="img/curvo.png">
+      <img src="img/curvo.png" alt="Monitor 27” Curvo">
+      <h3>Monitor 27” Curvo</h3>
+      <p>Pantalla Full HD curva para máxima inmersión.</p>
+      <span class="precio">$310.00</span>
+      <button class="btn-ver">Ver más</button>
     </div>
-    <div class="card">
-        <img src="img/audifonos.png" alt="Auriculares">
-        <h3>Auriculares Inalámbricos</h3>
-        <p>Sonido envolvente y cancelación de ruido activa.</p>
-        <span class="precio">$120.00</span>
-        <button class="btn-ver">Ver más</button>
+
+    <!-- CARD 5 -->
+    <div class="card" 
+         data-titulo="Auriculares Inalámbricos" 
+         data-detalles="Bluetooth 5.0, cancelación activa de ruido, batería de hasta 20 horas, micrófono integrado y estuche de carga rápida." 
+         data-precio="$120.00" 
+         data-img="img/audifonos.png">
+      <img src="img/audifonos.png" alt="Auriculares Inalámbricos">
+      <h3>Auriculares Inalámbricos</h3>
+      <p>Sonido envolvente y cancelación de ruido activa.</p>
+      <span class="precio">$120.00</span>
+      <button class="btn-ver">Ver más</button>
     </div>
-    <div class="card">
-        <img src="img/sd.png" alt="SSD">
-        <h3>SSD 1TB NVMe</h3>
-        <p>Velocidad ultrarrápida para tu PC o laptop.</p>
-        <span class="precio">$150.00</span>
-        <button class="btn-ver">Ver más</button>
+
+    <!-- CARD 6 -->
+    <div class="card" 
+         data-titulo="SSD 1TB NVMe" 
+         data-detalles="Unidad de estado sólido con interfaz PCIe Gen4, velocidades de lectura de hasta 7000MB/s, ideal para gaming y edición de video." 
+         data-precio="$150.00" 
+         data-img="img/sd.png">
+      <img src="img/sd.png" alt="SSD 1TB NVMe">
+      <h3>SSD 1TB NVMe</h3>
+      <p>Velocidad ultrarrápida para tu PC o laptop.</p>
+      <span class="precio">$150.00</span>
+      <button class="btn-ver">Ver más</button>
     </div>
-    <div class="card">
-        <img src="img/silla.png" alt="Silla Gamer">
-        <h3>Silla Gamer</h3>
-        <p>Comodidad y diseño ergonómico para largas horas.</p>
-        <span class="precio">$220.00</span>
-        <button class="btn-ver">Ver más</button>
+
+    <!-- CARD 7 -->
+    <div class="card" 
+         data-titulo="Silla Gamer" 
+         data-detalles="Silla ergonómica con soporte lumbar, reposabrazos ajustables, reclinación de 180°, tapizado en cuero sintético y base metálica resistente." 
+         data-precio="$220.00" 
+         data-img="img/silla.png">
+      <img src="img/silla.png" alt="Silla Gamer">
+      <h3>Silla Gamer</h3>
+      <p>Comodidad y diseño ergonómico para largas horas.</p>
+      <span class="precio">$220.00</span>
+      <button class="btn-ver">Ver más</button>
     </div>
-    <div class="card">
-        <img src="img/router2.png" alt="Router WiFi 6">
-        <h3>Router WiFi 6</h3>
-        <p>Conexión ultrarrápida y estable para todos tus dispositivos.</p>
-        <span class="precio">$180.00</span>
-        <button class="btn-ver">Ver más</button>
+
+    <!-- CARD 8 -->
+    <div class="card" 
+         data-titulo="Router WiFi 6" 
+         data-detalles="Router de doble banda con tecnología WiFi 6, velocidad de hasta 5400Mbps, cobertura extendida y múltiples puertos LAN." 
+         data-precio="$180.00" 
+         data-img="img/router2.png">
+      <img src="img/router2.png" alt="Router WiFi 6">
+      <h3>Router WiFi 6</h3>
+      <p>Conexión ultrarrápida y estable para todos tus dispositivos.</p>
+      <span class="precio">$180.00</span>
+      <button class="btn-ver">Ver más</button>
     </div>
-    <div class="card">
-        <img src="img/grafica.png" alt="Tarjeta Gráfica">
-        <h3>RTX 4070 Ti</h3>
-        <p>Gráficos de última generación para gamers y creadores.</p>
-        <span class="precio">$900.00</span>
-        <button class="btn-ver">Ver más</button>
+
+    <!-- CARD 9 -->
+    <div class="card" 
+         data-titulo="RTX 4070 Ti" 
+         data-detalles="Tarjeta gráfica con arquitectura Ada Lovelace, 12GB GDDR6X, soporte para ray tracing, DLSS 3 y triple ventilador para refrigeración." 
+         data-precio="$900.00" 
+         data-img="img/grafica.png">
+      <img src="img/grafica.png" alt="RTX 4070 Ti">
+      <h3>RTX 4070 Ti</h3>
+      <p>Gráficos de última generación para gamers y creadores.</p>
+      <span class="precio">$900.00</span>
+      <button class="btn-ver">Ver más</button>
     </div>
-    <div class="card">
-        <img src="img/impresora.png" alt="Impresora">
-        <h3>Impresora Multifuncional</h3>
-        <p>Imprime, escanea y copia con calidad profesional.</p>
-        <span class="precio">$200.00</span>
-        <button class="btn-ver">Ver más</button>
+
+    <!-- CARD 10 -->
+    <div class="card" 
+         data-titulo="Impresora Multifuncional" 
+         data-detalles="Impresora láser multifuncional con conectividad WiFi, impresión dúplex automática, escáner de alta resolución y bandeja de 250 hojas." 
+         data-precio="$200.00" 
+         data-img="img/impresora.png">
+      <img src="img/impresora.png" alt="Impresora Multifuncional">
+      <h3>Impresora Multifuncional</h3>
+      <p>Imprime, escanea y copia con calidad profesional.</p>
+      <span class="precio">$200.00</span>
+      <button class="btn-ver">Ver más</button>
     </div>
+
+    <!-- CARD 11 -->
+    <div class="card" 
+         data-titulo="Tablet Gráfica Wacom" 
+         data-detalles="Ideal para ilustradores y diseñadores gráficos. Incluye lápiz sensible a la presión, conectividad USB-C y software creativo." 
+         data-precio="$250.00" 
+         data-img="img/card11.png">
+      <img src="img/card11.png" alt="Tablet Gráfica Wacom">
+      <h3>Tablet Gráfica Wacom</h3>
+      <p>Perfecta para ilustradores y diseñadores.</p>
+      <span class="precio">$250.00</span>
+      <button class="btn-ver">Ver más</button>
+    </div>
+
+    <!-- CARD 12 -->
+    <div class="card" 
+         data-titulo="Intel Core i9 13th Gen" 
+         data-detalles="Procesador de 24 núcleos, 32 hilos, frecuencia turbo de hasta 5.6GHz, soporte DDR5 y PCIe 5.0." 
+         data-precio="$650.00" 
+         data-img="img/card12.png">
+      <img src="img/card12.png" alt="Intel Core i9 13th Gen">
+      <h3>Intel Core i9 13th Gen</h3>
+      <p>Máxima potencia para gamers y creadores.</p>
+      <span class="precio">$650.00</span>
+      <button class="btn-ver">Ver más</button>
+    </div>
+
+    <!-- CARD 13 -->
+    <div class="card" 
+         data-titulo="Corsair Vengeance 32GB DDR5" 
+         data-detalles="Memoria RAM DDR5 de 32GB (2x16GB), frecuencia de 6000MHz, disipador de calor optimizado, RGB personalizable." 
+         data-precio="$180.00" 
+         data-img="img/card13.png">
+      <img src="img/card13.png" alt="RAM Corsair 32GB DDR5">
+      <h3>RAM Corsair 32GB DDR5</h3>
+      <p>Memoria ultrarrápida para multitarea.</p>
+      <span class="precio">$180.00</span>
+      <button class="btn-ver">Ver más</button>
+    </div>
+
+    <!-- CARD 14 -->
+    <div class="card" 
+         data-titulo="Fuente de Poder 750W Gold" 
+         data-detalles="Fuente certificada 80 Plus Gold, completamente modular, ventilador silencioso de 135mm, protecciones contra sobrecarga y cortocircuito, ideal para equipos de alto rendimiento." 
+         data-precio="$120.00" 
+         data-img="img/card14.png">
+      <img src="img/card14.png" alt="Fuente de Poder 750W Gold">
+      <h3>Fuente de Poder 750W Gold</h3>
+      <p>Eficiencia y estabilidad energética.</p>
+      <span class="precio">$120.00</span>
+      <button class="btn-ver">Ver más</button>
+    </div>
+
+    <!-- CARD 15 -->
+    <div class="card" 
+         data-titulo="Case ATX Gamer" 
+         data-detalles="Chasis ATX con panel lateral de vidrio templado, 4 ventiladores ARGB incluidos, soporte para refrigeración líquida y gestión de cables optimizada." 
+         data-precio="$140.00" 
+         data-img="img/card15.png">
+      <img src="img/card15.png" alt="Case ATX Gamer">
+      <h3>Case ATX Gamer</h3>
+      <p>Diseño con vidrio templado y RGB.</p>
+      <span class="precio">$140.00</span>
+      <button class="btn-ver">Ver más</button>
+    </div>
+
+    <!-- CARD 16 -->
+    <div class="card" 
+         data-titulo="Webcam Logitech C920" 
+         data-detalles="Resolución Full HD 1080p, micrófono estéreo integrado, corrección automática de luz, ideal para videollamadas y streaming." 
+         data-precio="$90.00" 
+         data-img="img/card16.png">
+      <img src="img/card16.png" alt="Webcam Logitech C920">
+      <h3>Webcam Logitech C920</h3>
+      <p>Videollamadas nítidas y fluidas.</p>
+      <span class="precio">$90.00</span>
+      <button class="btn-ver">Ver más</button>
+    </div>
+
+    <!-- CARD 17 -->
+    <div class="card" 
+         data-titulo="HDD 4TB Seagate Barracuda" 
+         data-detalles="Disco duro de 4TB, 7200 RPM, caché de 256MB, ideal para almacenamiento masivo de archivos, respaldo y servidores personales." 
+         data-precio="$110.00" 
+         data-img="img/card17.png">
+      <img src="img/card17.png" alt="HDD 4TB Seagate">
+      <h3>HDD 4TB Seagate</h3>
+      <p>Gran capacidad de almacenamiento.</p>
+      <span class="precio">$110.00</span>
+      <button class="btn-ver">Ver más</button>
+    </div>
+
+    <!-- CARD 18 -->
+    <div class="card" 
+         data-titulo="Refrigeración Líquida Corsair H100i RGB" 
+         data-detalles="Sistema de refrigeración líquida con radiador de 240mm, iluminación RGB, control mediante software iCUE y compatibilidad universal con sockets Intel y AMD." 
+         data-precio="$170.00" 
+         data-img="img/card18.png">
+      <img src="img/card18.png" alt="Refrigeración Líquida Corsair">
+      <h3>Refrigeración Líquida Corsair</h3>
+      <p>Enfriamiento premium para CPU.</p>
+      <span class="precio">$170.00</span>
+      <button class="btn-ver">Ver más</button>
+    </div>
+
+    <!-- CARD 19 -->
+    <div class="card" 
+         data-titulo="UPS APC 1500VA" 
+         data-detalles="Sistema de respaldo de energía, 1500VA/900W, con software de monitoreo, 8 salidas protegidas, ideal para oficinas y estaciones de trabajo." 
+         data-precio="$220.00" 
+         data-img="img/card19.png">
+      <img src="img/card19.png" alt="UPS APC 1500VA">
+      <h3>UPS APC 1500VA</h3>
+      <p>Protección contra apagones.</p>
+      <span class="precio">$220.00</span>
+      <button class="btn-ver">Ver más</button>
+    </div>
+
+    <!-- CARD 20 -->
+    <div class="card" 
+         data-titulo="Proyector Epson Full HD" 
+         data-detalles="Resolución 1080p, 3500 lúmenes, conectividad HDMI y WiFi, ideal para presentaciones, cine en casa y aulas interactivas." 
+         data-precio="$450.00" 
+         data-img="img/card20.png">
+      <img src="img/card20.png" alt="Proyector Epson Full HD">
+      <h3>Proyector Epson Full HD</h3>
+      <p>Presentaciones y cine en casa.</p>
+      <span class="precio">$450.00</span>
+      <button class="btn-ver">Ver más</button>
+    </div>
+
   </div>
 </section>
+      
+    <!-- Modal -->
+   <div id="modal" class="modal">
+       <div class="modal-content">
+          <img id="modal-img" src="" alt="Producto" />
+          <div class="modal-details">
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+        <p id="modal-price"></p>
+       <button onclick="agregarAlCarrito()">Agregar al carrito</button>
+       <button onclick="cerrarModal()">Cerrar</button>
+        </div>
+       </div>
+   </div>
 
     <footer>
         <div class="footer-content">
-            <p>&copy; 2025 Xbox Fan Page | Todos los derechos reservados</p>
+            <p>&copy; 2025  BiteTech  | Todos los derechos reservados</p>
             <div class="social-icons">
                 <a href="https://facebook.com" target="_blank" class="icon facebook">Facebook</a>
                 <a href="https://twitter.com" target="_blank" class="icon twitter">Twitter</a>
@@ -111,6 +313,6 @@
             </div>
         </div>
     </footer>
-    <script src=""></script>
+    <script src="js/java.js"></script>
 </body>
 </html>
