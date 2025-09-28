@@ -8,10 +8,26 @@
 a {
   text-decoration: none;
 }
+#irAlCarrito {
+  background-color: #ff3b3b;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s ease;
+  text-align: center;
+}
 
+@font-face {
+  font-family: "miFuente";
+  src: url("../fonts/MinecraftBoldItalic-1y1e.otf")format("truetype");
+}
 body {
+  font-family: "miFuente", sans-serif;
   background: #000000;
-  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -21,28 +37,40 @@ h1 {
   margin-bottom: 30px;
 }
 
-/* -------------------- HEADER -------------------- */
+/* Estilo para el header */
 header {
-  width: 1140px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 1140px;
   margin: auto;
-  height: 50px;
+  height: 60px;
   display: flex;
   align-items: center;
+  justify-content: space-between; /* separa logo y menú */
   position: fixed;
   top: 0;
   z-index: 1000;
   background-color: transparent;
+  padding: 0 20px;
 }
 
+/* Estilo para el nav */
+header nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+/* Estilo para los enlaces */
 header nav a {
   color: white;
   margin-right: 5px;
   padding: 5px 10px;
-  font-size: 12px;
   font-family: "Poppins", sans-serif;
+  font-size: 10px;
   transition: 0.2s;
-  z-index: 100;
+  white-space: nowrap;
+  text-decoration: none;
 }
 
 header nav a.active,

@@ -10,13 +10,13 @@
     
     <header class="navbar">
         <a href="index.html" class="logo">
-            <img src="logotipo/logo.svg" alt="">
+            <img src="img/logo para el proyecto.svg" alt="">
         </a> 
         <nav>
             <a href="#" class="active">Inicio</a>
             <a href="catálogo.html"> Catálogo</a>
-            <a href="#"></a>
-            <a href="#"></a>
+            <a href="carrito.html">Carrito</a>
+            <a href="nosotros.html">Sobre Nosotros</a>
             <a href="contacto.html">Contactenos</a>
         </nav>
     </header>
@@ -35,6 +35,7 @@
       <h3>Laptop Dell XPS</h3>
       <p>Potente y ligera, ideal para estudiantes y profesionales.</p>
       <span class="precio">$1200.00</span>
+      <button onclick="agregarAlCarrito('Laptop Dell XPS',1200)"></button>
       <button class="btn-ver">Ver más</button>
     </div>
 
@@ -48,6 +49,7 @@
       <h3>Teclado Mecánico RGB</h3>
       <p>Retroiluminado con switches azules para mejor experiencia.</p>
       <span class="precio">$85.00</span>
+      <button onclick="agregarAlCarrito('Teclado Mecánico RGB',85)"></button>
       <button class="btn-ver">Ver más</button>
     </div>
 
@@ -61,6 +63,7 @@
       <h3>Mouse Gamer Logitech</h3>
       <p>Alta precisión con sensor óptico y diseño ergonómico.</p>
       <span class="precio">$49.99</span>
+      <button onclick="agregarAlCarrito('Mouse Gamer Logitech',49.99)"></button>
       <button class="btn-ver">Ver más</button>
     </div>
 
@@ -74,6 +77,7 @@
       <h3>Monitor 27” Curvo</h3>
       <p>Pantalla Full HD curva para máxima inmersión.</p>
       <span class="precio">$310.00</span>
+      <button onclick="agregarAlCarrito('Monitor 27” Curvo',310)"></button>
       <button class="btn-ver">Ver más</button>
     </div>
 
@@ -87,6 +91,7 @@
       <h3>Auriculares Inalámbricos</h3>
       <p>Sonido envolvente y cancelación de ruido activa.</p>
       <span class="precio">$120.00</span>
+      <button onclick="agregarAlCarrito('Auriculares Inalámbricos',120)"></button>
       <button class="btn-ver">Ver más</button>
     </div>
 
@@ -100,6 +105,7 @@
       <h3>SSD 1TB NVMe</h3>
       <p>Velocidad ultrarrápida para tu PC o laptop.</p>
       <span class="precio">$150.00</span>
+      <button onclick="agregarAlCarrito('SSD 1TB NVMe',150)"></button>
       <button class="btn-ver">Ver más</button>
     </div>
 
@@ -113,6 +119,7 @@
       <h3>Silla Gamer</h3>
       <p>Comodidad y diseño ergonómico para largas horas.</p>
       <span class="precio">$220.00</span>
+      <button onclick="agregarAlCarrito('Silla Gamer',220)"></button>
       <button class="btn-ver">Ver más</button>
     </div>
 
@@ -126,6 +133,7 @@
       <h3>Router WiFi 6</h3>
       <p>Conexión ultrarrápida y estable para todos tus dispositivos.</p>
       <span class="precio">$180.00</span>
+      <button onclick="agregarAlCarrito('Router WiFi 6',180)"></button>
       <button class="btn-ver">Ver más</button>
     </div>
 
@@ -139,6 +147,7 @@
       <h3>RTX 4070 Ti</h3>
       <p>Gráficos de última generación para gamers y creadores.</p>
       <span class="precio">$900.00</span>
+      <button onclick="agregarAlCarrito('RTX 4070 Ti',900)"></button>
       <button class="btn-ver">Ver más</button>
     </div>
 
@@ -152,6 +161,7 @@
       <h3>Impresora Multifuncional</h3>
       <p>Imprime, escanea y copia con calidad profesional.</p>
       <span class="precio">$200.00</span>
+      <button onclick="agregarAlCarrito('Impresora Multifuncional',200)"></button>
       <button class="btn-ver">Ver más</button>
     </div>
 
@@ -165,6 +175,7 @@
       <h3>Tablet Gráfica Wacom</h3>
       <p>Perfecta para ilustradores y diseñadores.</p>
       <span class="precio">$250.00</span>
+      <button onclick="agregarAlCarrito('Tablet Gráfica Wacom',250)"></button>
       <button class="btn-ver">Ver más</button>
     </div>
 
@@ -178,6 +189,7 @@
       <h3>Intel Core i9 13th Gen</h3>
       <p>Máxima potencia para gamers y creadores.</p>
       <span class="precio">$650.00</span>
+      <button onclick="agregarAlCarrito('Intel Core i9 13th Gen',650)"></button>
       <button class="btn-ver">Ver más</button>
     </div>
 
@@ -191,6 +203,7 @@
       <h3>RAM Corsair 32GB DDR5</h3>
       <p>Memoria ultrarrápida para multitarea.</p>
       <span class="precio">$180.00</span>
+      <button onclick="agregarAlCarrito('Corsair Vengeance 32GB DDR5',180)"></button>
       <button class="btn-ver">Ver más</button>
     </div>
 
@@ -204,6 +217,7 @@
       <h3>Fuente de Poder 750W Gold</h3>
       <p>Eficiencia y estabilidad energética.</p>
       <span class="precio">$120.00</span>
+      <button onclick="agregarAlCarrito('Fuente de Poder 750W Gold',120)"></button>
       <button class="btn-ver">Ver más</button>
     </div>
 
@@ -217,6 +231,7 @@
       <h3>Case ATX Gamer</h3>
       <p>Diseño con vidrio templado y RGB.</p>
       <span class="precio">$140.00</span>
+      <button onclick="agregarAlCarrito('Case ATX Gamer',140)"></button>
       <button class="btn-ver">Ver más</button>
     </div>
 
@@ -230,6 +245,7 @@
       <h3>Webcam Logitech C920</h3>
       <p>Videollamadas nítidas y fluidas.</p>
       <span class="precio">$90.00</span>
+      <button onclick="agregarAlCarrito('Webcam Logitech C920',90)"></button>
       <button class="btn-ver">Ver más</button>
     </div>
 
@@ -243,6 +259,7 @@
       <h3>HDD 4TB Seagate</h3>
       <p>Gran capacidad de almacenamiento.</p>
       <span class="precio">$110.00</span>
+      <button onclick="agregarAlCarrito('HDD 4TB Seagate',110)"></button>
       <button class="btn-ver">Ver más</button>
     </div>
 
@@ -256,6 +273,7 @@
       <h3>Refrigeración Líquida Corsair</h3>
       <p>Enfriamiento premium para CPU.</p>
       <span class="precio">$170.00</span>
+      <button onclick="agregarAlCarrito('Refrigeración Líquida Corsair H100i RGB',170)"></button>
       <button class="btn-ver">Ver más</button>
     </div>
 
@@ -269,6 +287,7 @@
       <h3>UPS APC 1500VA</h3>
       <p>Protección contra apagones.</p>
       <span class="precio">$220.00</span>
+      <button onclick="agregarAlCarrito('UPS APC 1500VA',220)"></button>
       <button class="btn-ver">Ver más</button>
     </div>
 
@@ -282,9 +301,10 @@
       <h3>Proyector Epson Full HD</h3>
       <p>Presentaciones y cine en casa.</p>
       <span class="precio">$450.00</span>
+      <button onclick="agregarAlCarrito('Proyector Epson Full HD',450)"></button>
       <button class="btn-ver">Ver más</button>
     </div>
-
+    
   </div>
 </section>
       
@@ -296,15 +316,18 @@
         <h2 id="modal-title"></h2>
         <p id="modal-description"></p>
         <p id="modal-price"></p>
-       <button onclick="agregarAlCarrito()">Agregar al carrito</button>
+  <button onclick="agregarProductoModalAlCarrito()">Agregar al carrito</button>
        <button onclick="cerrarModal()">Cerrar</button>
         </div>
        </div>
    </div>
-
+   <div class="container">
+    <a id="irAlCarrito" href="carrito.html">Ir al carrito</a>
+   </div>
+  
     <footer>
         <div class="footer-content">
-            <p>&copy; 2025  BiteTech  | Todos los derechos reservados</p>
+            <p>&copy; 2025  TECH BYTE | Todos los derechos reservados</p>
             <div class="social-icons">
                 <a href="https://facebook.com" target="_blank" class="icon facebook">Facebook</a>
                 <a href="https://twitter.com" target="_blank" class="icon twitter">Twitter</a>
