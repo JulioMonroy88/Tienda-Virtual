@@ -572,3 +572,14 @@ footer {
     font-size: 16px;
   }
 } 
+
+@font-face {
+  font-family: "miFuente";
+  src: url("../fonts/MinecraftBoldItalic-1y1e.otf")format("truetype");
+}
+body {
+  font-family: "miFuente", sans-serif;
+  background: #000000;
+  margin: 0;
+  padding: 0;
+}

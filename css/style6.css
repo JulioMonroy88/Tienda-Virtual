@@ -5,6 +5,17 @@
   font-family: "Poppins", sans-serif;
 }
 
+@font-face {
+  font-family: "miFuente";
+  src: url("../fonts/MinecraftBoldItalic-1y1e.otf")format("truetype");
+}
+body {
+  font-family: "miFuente", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
 .contenedor .container {
   max-width: 1140px;
   margin: auto;
